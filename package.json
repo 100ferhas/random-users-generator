@@ -1,7 +1,8 @@
 {
-  "name": "random-user-generator",
+  "name": "random-users-generator",
   "version": "1.0.0",
   "description": "This is a client to use fake user APIs at https://randomuser.me/",
+  "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": "./lib/index.js",
@@ -24,6 +25,14 @@
   ],
   "author": "Gianmarco Pasquariello <100ferhas@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/100ferhas/random-users-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/100ferhas/random-users-generator/issues"
+  },
+  "homepage": "https://github.com/100ferhas/random-users-generator",
   "devDependencies": {
     "prettier": "^3.0.0",
     "tslint": "^6.1.3",
