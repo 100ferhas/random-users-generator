@@ -139,5 +139,4 @@ generatorClient.getUsers({
 ```
 
 
-Please feel free to make suggestion or PR to improve the client.
-If you are using this library please star the repo for visibility. Thank you.
+Please feel free to make suggestion or PR to improve the client. **If you are using this library please star the repo for visibility.** 
