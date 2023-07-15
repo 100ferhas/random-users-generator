@@ -142,10 +142,13 @@ const serializeOptions = (params: UserRequestOptions) => {
 class Client {
     getUsers = async (options?: UserRequestOptions): Promise<UsersResponse> => {
         const res = await axios.get<UsersResponse>(API_URL, { params: options, paramsSerializer: serializeOptions });
-        if (res.status !== 200) {
-            throw Error(`Error while requesting data, http status ${res.status}.`);
-        }
-        return res.data;
+        return new Promise((resolve, reject) => {
+            if (res.status !== 200) {
+                reject(`Error while requesting data, http status ${res.status}.`)
+            } else {
+                resolve(res.data);
+            }
+        });
     }
 }
 
