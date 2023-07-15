@@ -68,7 +68,7 @@ generatorClient.getUsers({
 | minLength | number   | min length of generated password                           | no       | any number                                  |
 | maxLength | number   | max length of generated password                           | no       | any number                                  |
 
-### Response Data
+#### Response Data
 ```json
 {
   "results": [
