@@ -1,4 +1,4 @@
-import axios from "../node_modules/axios/index";
+import axios from "axios";
 
 const API_URL = 'https://randomuser.me/api/1.4/';
 
