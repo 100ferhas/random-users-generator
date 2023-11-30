@@ -3,11 +3,11 @@ import axios from 'axios';
 const API_URL = 'https://randomuser.me/api/1.4/';
 
 export interface UsersResponse {
-    results: Result[]
+    results: UserData[]
     info: Info
 }
 
-interface Result {
+export interface UserData {
     gender: string
     name: Name
     location: Location
